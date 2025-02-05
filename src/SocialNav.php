@@ -112,7 +112,7 @@ class SocialNav extends ViewableData
         "YouTube" => "fa-youtube"
     ];
 
-    private static $service_class_prefix = "fa-brands";
+    private static $service_class_prefix = "fa-brands fa-xl";
 
     /**
      * Include custom fontawesome CSS when rendering
