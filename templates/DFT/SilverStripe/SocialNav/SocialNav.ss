@@ -6,7 +6,7 @@
                     <a href="{$URL}" <% if $Title %>title="{$Title}"<% end_if %>>
                         <span class="{$ConvertedService} {$ExtraClasses}">
                             <img
-                                src="{$Top.BaseHref}socialnav/images/{$ConvertedService}.png"
+                                src="{$ServiceIcon}"
                                 alt="{$Service}"
                             />
                         </span>
