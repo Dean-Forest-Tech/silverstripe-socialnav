@@ -34,7 +34,10 @@
 
 * Migrate to DFT namespace
 
-## 3.0.0
+## 2.1.0
 
 * SS5 support added
+
+## 3.0.0
+
 * Migrate to FontAwesome 6 icons
