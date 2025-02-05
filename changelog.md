@@ -30,6 +30,10 @@
 
 * Add migration config from SS3
 
+## 2.0.3
+
+* Migrate to DFT namespace
+
 ## 3.0.0
 
 * SS5 support added
