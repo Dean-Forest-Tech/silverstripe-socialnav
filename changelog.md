@@ -37,6 +37,7 @@
 ## 2.1.0
 
 * SS5 support added
+* Fix image icon path resolvers
 
 ## 3.0.0
 
