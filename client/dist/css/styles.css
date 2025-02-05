@@ -1,0 +1,39 @@
+.socialnav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.socialnav li a .fa-brands {
+    font-family: 'Font Awesome 6 Brands' !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.socialnav li a .fa-brands::before {
+    content: var(--fa);
+}
+
+.socialnav li a .fa-brands.fa-lg {
+    font-size: 1.25em;
+    line-height: 0.05em;
+    vertical-align: -0.075em;
+}
+
+.socialnav li a .fa-brands.fa-xl {
+    font-size: 1.5em;
+    line-height: 0.04167em;
+    vertical-align: -0.125em;
+}
+
+.socialnav li a .fa-brands.fa-2xl {
+    font-size: 2em;
+    line-height: 0.03125em;
+    vertical-align: -0.1875em;
+}
