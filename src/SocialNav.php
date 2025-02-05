@@ -72,45 +72,47 @@ class SocialNav extends ViewableData
      * @var array
      */
     private static $service_classes = [
-        "Amazon" => "fa-brands fa-amazon",
-        "Apple" => "fa-brands fa-apple",
-        "AppleAppStore" => "fa-brands fa-app-store-ios",
-        "Audible" => "fa-brands fa-audible",
-        "Bandcamp" => "fa-brands fa-bandcamp",
-        "Bluesky" => "fa-brands fa-bluesky",
-        "Delicious" => "fa-brands fa-delicious",
-        "Discord" => "fa-brands fa-discord",
-        "Dribble" => "fa-brands fa-dribbble",
-        "Ebay" => "fa-brands fa-ebay",
-        "Etsy" => "fa-brands fa-etsy",
-        "Facebook" => "fa-brands fa-facebook",
-        "FacebookMessenger" => "fa-brands fa-facebook-messenger",
-        "GitHub" => "fa-brands fa-github",
-        "GitLab" => "fa-brands fa-gitlab",
-        "GooglePlay" => "fa-brands fa-google-play",
-        "Instagram" => "fa-brands fa-instagram",
-        "Linkedin" => "fa-brands fa-linkedin",
-        "Mastodon" => "fa-brands fa-mastodon",
-        "Patreon" => "fa-brands fa-patreon",
-        "Pinterest" => "fa-brands fa-pinterest",
-        "Reddit" => "fa-brands fa-reddit",
-        "Shopify" => "fa-brands fa-shopify",
-        "SignalMessenger" => "fa-brands fa-signal-messenger",
-        "Skype" => "fa-brands fa-skype",
-        "Slack" => "fa-brands fa-slack",
-        "Snapchat" => "fa-brands fa-snapchat",
-        "Spotify" => "fa-brands fa-spotify",
-        "Steam" => "fa-brands fa-steam",
-        "Telegram" => "fa-brands fa-telegram",
-        "TikTok" => "fa-brands fa-tiktok",
-        "Trello" => "fa-brands fa-trello",
-        "Tumblr" => "fa-brands fa-square-tumblr",
-        "Twitter" => "fa-brands fa-twitter",
-        "Vimeo" => "fa-brands fa-vimeo-v",
-        "WhatsApp" => "fa-brands fa-whatsapp",
-        "X" => "fa-brands fa-x-twitter",
-        "YouTube" => "fa-brands fa-youtube"
+        "Amazon" => "fa-amazon",
+        "Apple" => "fa-apple",
+        "AppleAppStore" => "fa-app-store-ios",
+        "Audible" => "fa-audible",
+        "Bandcamp" => "fa-bandcamp",
+        "Bluesky" => "fa-bluesky",
+        "Delicious" => "fa-delicious",
+        "Discord" => "fa-discord",
+        "Dribble" => "fa-dribbble",
+        "Ebay" => "fa-ebay",
+        "Etsy" => "fa-etsy",
+        "Facebook" => "fa-facebook",
+        "FacebookMessenger" => "fa-facebook-messenger",
+        "GitHub" => "fa-github",
+        "GitLab" => "fa-gitlab",
+        "GooglePlay" => "fa-google-play",
+        "Instagram" => "fa-instagram",
+        "Linkedin" => "fa-linkedin",
+        "Mastodon" => "fa-mastodon",
+        "Patreon" => "fa-patreon",
+        "Pinterest" => "fa-pinterest",
+        "Reddit" => "fa-reddit",
+        "Shopify" => "fa-shopify",
+        "SignalMessenger" => "fa-signal-messenger",
+        "Skype" => "fa-skype",
+        "Slack" => "fa-slack",
+        "Snapchat" => "fa-snapchat",
+        "Spotify" => "fa-spotify",
+        "Steam" => "fa-steam",
+        "Telegram" => "fa-telegram",
+        "TikTok" => "fa-tiktok",
+        "Trello" => "fa-trello",
+        "Tumblr" => "fa-square-tumblr",
+        "Twitter" => "fa-twitter",
+        "Vimeo" => "fa-vimeo-v",
+        "WhatsApp" => "fa-whatsapp",
+        "X" => "fa-x-twitter",
+        "YouTube" => "fa-youtube"
     ];
+
+    private static $service_class_prefix = "fa-brands";
 
     /**
      * Include custom fontawesome CSS when rendering
@@ -154,10 +156,14 @@ class SocialNav extends ViewableData
             self::class,
             'service_classes'
         );
+        $prefix = Config::inst()->get(
+            self::class,
+            'service_class_prefix'
+        );
         $class = "";
 
         if (array_key_exists($service, $icons)) {
-            $class = $icons[$service];
+            $class = $prefix . " " . $icons[$service];
         }
 
         return $class;
