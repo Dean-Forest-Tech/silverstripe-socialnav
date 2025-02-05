@@ -42,3 +42,5 @@
 ## 3.0.0
 
 * Migrate to FontAwesome 6 icons
+* Switch to i18n friendly titles for links
+* Add some helpful prompts to the admin
