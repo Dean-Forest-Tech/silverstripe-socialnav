@@ -3,4 +3,5 @@ Name: socialnavlegacy
 ---
 SilverStripe\ORM\DatabaseAdmin:
   classname_value_remapping:
-    SocialNavLink: ilateral\SilverStripe\SocialNav\Model\SocialNavLink
+    SocialNavLink: DFT\SilverStripe\SocialNav\Model\SocialNavLink
+    ilateral\SilverStripe\SocialNav\Model\SocialNavLink: DFT\SilverStripe\SocialNav\Model\SocialNavLink
