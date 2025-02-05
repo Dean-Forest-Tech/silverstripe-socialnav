@@ -1,21 +1,15 @@
 <?php
 
-namespace ilateral\SilverStripe\SocialNav\Model;
+namespace DFT\SilverStripe\SocialNav\Model;
 
-use SilverStripe\ORM\DataObject;
-use SilverStripe\SiteConfig\SiteConfig;
-use SilverStripe\ORM\DB;
 use SilverStripe\Core\Convert;
-use ilateral\SilverStripe\SocialNav\SocialNav;
+use SilverStripe\ORM\DataObject;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\RequiredFields;
+use SilverStripe\SiteConfig\SiteConfig;
+use DFT\SilverStripe\SocialNav\SocialNav;
+use SilverStripe\Core\Manifest\ModuleResourceLoader;
 
-/**
- * Represents an item in the Social Nav
- *
- * @author ilateral (http://www.ilateral.co.uk)
- * @package SocialNav
- */
 class SocialNavLink extends DataObject
 {
 
@@ -45,6 +39,22 @@ class SocialNavLink extends DataObject
     public function getConvertedService()
     {
         return Convert::raw2url($this->Service);
+    }
+
+    public function getServiceIcon()
+    {
+        $return = "";
+        $service = $this->Service;
+        $loader = ModuleResourceLoader::singleton();
+
+        if (!empty($service)) {
+            $service = strtolower($service);
+            $return = $loader->resolveURL(
+                'dft/silverstripe-socialnav:images/' . $service . ".png"
+            );
+        }
+
+        return $return;
     }
 
     public function getCMSFields()

@@ -4,8 +4,8 @@ Name: socialnavconfig
 ## YML Config
 SilverStripe\Control\Controller:
   extensions:
-    - 'ilateral\SilverStripe\SocialNav\Extensions\ControllerExtension'
+    - 'DFT\SilverStripe\SocialNav\Extensions\ControllerExtension'
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
-    - 'ilateral\SilverStripe\SocialNav\Extensions\SiteConfigExtension'
+    - 'DFT\SilverStripe\SocialNav\Extensions\SiteConfigExtension'
 

@@ -30,7 +30,15 @@
 
 * Add migration config from SS3
 
-## 3.0.0
+## 2.0.3
+
+* Migrate to DFT namespace
+
+## 2.1.0
 
 * SS5 support added
+* Fix image icon path resolvers
+
+## 3.0.0
+
 * Migrate to FontAwesome 6 icons
