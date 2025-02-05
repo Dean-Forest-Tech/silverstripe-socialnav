@@ -1,21 +1,14 @@
 <?php
 
-namespace ilateral\SilverStripe\SocialNav\Model;
+namespace DFT\SilverStripe\SocialNav\Model;
 
 use SilverStripe\ORM\DataObject;
 use SilverStripe\SiteConfig\SiteConfig;
-use SilverStripe\ORM\DB;
 use SilverStripe\Core\Convert;
-use ilateral\SilverStripe\SocialNav\SocialNav;
+use DFT\SilverStripe\SocialNav\SocialNav;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\RequiredFields;
 
-/**
- * Represents an item in the Social Nav
- *
- * @author ilateral (http://www.ilateral.co.uk)
- * @package SocialNav
- */
 class SocialNavLink extends DataObject
 {
 

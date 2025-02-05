@@ -1,6 +1,6 @@
 <?php
 
-namespace ilateral\SilverStripe\SocialNav;
+namespace DFT\SilverStripe\SocialNav;
 
 use SilverStripe\View\ViewableData;
 use SilverStripe\SiteConfig\SiteConfig;

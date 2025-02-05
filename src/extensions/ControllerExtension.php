@@ -1,16 +1,10 @@
 <?php
 
-namespace ilateral\SilverStripe\SocialNav\Extensions;
+namespace DFT\SilverStripe\SocialNav\Extensions;
 
 use SilverStripe\Core\Extension;
-use ilateral\SilverStripe\SocialNav\SocialNav;
+use DFT\SilverStripe\SocialNav\SocialNav;
 
-/**
- * Add socialnav hook to controllers
- *
- * @author ilateral (http://www.ilateral.co.uk)
- * @package SocialNav
- */
 class ControllerExtension extends Extension
 {
 
