@@ -31,5 +31,10 @@
         "psr-4": {
             "DFT\\SilverStripe\\SocialNav\\": "src/"
         }
+    },
+    "extra": {
+        "expose": [
+            "images"
+        ]
     }
 }
