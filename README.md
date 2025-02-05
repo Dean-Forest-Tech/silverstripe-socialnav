@@ -9,7 +9,7 @@ icons).
 
 Install via composer:
 
-`composer require i-lateral/silverstripe-socialnav`
+`composer require dft/silverstripe-socialnav`
 
 ## Usage
 
@@ -27,4 +27,4 @@ If you want to loop through Specific menu items (to access them individually in 
 
 ## Customising the template
 
-If you want to customise the template, simply copy the following template into your theme: `ilateral\SilverStripe\SocialNav\SocialNav.ss
+If you want to customise the template, simply copy the following template into your theme: `DFT\SilverStripe\SocialNav\SocialNav.ss
